@@ -199,6 +199,7 @@ img{
     margin-top: -110px;
     margin-left: 60px;
     text-wrap: nowrap;
+    font-size: 15px;
 }
 
 /*=== Show menu===*/
@@ -230,7 +231,7 @@ img{
 }
 
 .home__container{
-    height: calc(190vh - var(--header-height));
+    height: calc(200vh - var(--header-height));
     width: calc(100% - 2rem);
     row-gap: 3rem;
     margin-top: 50px;
