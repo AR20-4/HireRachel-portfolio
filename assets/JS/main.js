@@ -64,6 +64,8 @@ sr.reveal('.home__intro_box', {origin:'left'})
 sr.reveal('.work-heading', {origin:'left'})
 sr.reveal('.home-button', {origin:'left', delay: 200})
 sr.reveal('.home__social-links', {origin:'left', delay: 200})
+sr.reveal('.bg_circleline', {origin:'top'})
+sr.reveal('.white_circle', {origin:'top'})
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img', {delay: 500})
@@ -83,11 +85,14 @@ sr.reveal('.portfolio__card_b', {origin:'right'})
 
 
 
-/*SCROLL CONTACT sr.reveal('.portfolio__img', {origin:'left', delay: 200})*/
+/*SCROLL CONTACT )*/
+sr.reveal('.contact__img', {origin:'left', delay: 400})
 sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
+
+
 
 
 
