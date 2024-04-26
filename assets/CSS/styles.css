@@ -273,8 +273,9 @@ img{
    justify-content: center;
 }
 .home__img img{
-    min-width: 420px;
     margin-top: -30px;
+    max-width: 420px;
+    margin-left:-10px;
 }
 .home__intro_box{
     display: block;
@@ -986,18 +987,18 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
         width: 100%;  
     }
     .home__img{
-        position: relative; 
-        right: 20px; 
-        top: -15px;
+        position: relative;
+        left: -180px; 
+        top: 5px;
         z-index: 25;
     }
     .home__img img{
-        max-width: 550px;
+        max-width: 500px;
     }
     .home__title{
-       margin-top: -860px; 
-       margin-left: 380px;
-       font-size: 1.6rem;
+       margin-top: -720px; 
+       margin-left: 250px;
+       font-size: 1.4rem;
     }
     .home__title span{
         margin-top: 100px;
@@ -1009,10 +1010,11 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
     }
     .home__intro_box{
         position: absolute;
-        top: 900px;
-        left: 240px;
+        top: 680px;
+        left: 500px;
         padding-top: 10px;
-        height: 350px;
+        height: 440px;
+        max-width: 300px;
     }
     .home__intro_title{
         padding-bottom: 20px;
@@ -1021,21 +1023,25 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
         padding-bottom: 30px;
         margin-top: -10px;
     }
+    .home__social-links{
+        margin-top: -160px;
+    }
     .box__container-b{
-        margin-left: -150px;
-        margin-top: 50px;
+        margin-left: -400px;
+        margin-top: -200px;
         height: 350px;
         width: 350px;
     }
     .home-button{
         margin-top: -250px;  
-        margin-left: -450px;
+        margin-left: -750px;
     }
     .button{
         margin-left: 25px;
     }
     .white_circle{
-        margin-top: -150px;
+        margin-top: -100px;
+        margin-left: 200px;
     }
     .home__social-follow{
         position: relative;
@@ -1154,16 +1160,20 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
         margin-left: -300px;
     }
     .home__title{
-        font-size: 1.8rem;
-        margin-top: -1500px; 
-        margin-left: 250px;
+        font-size: 1.7rem;
+        margin-top: -1230px; 
+        margin-left: 300px;
      }
      .home__img{
-        margin-left: -450px;
+        margin-left: -90px;
+        margin-top: -10px;
+     }
+     .home__img img{
+        max-width: 600px;
      }
      .home__intro_box{
-        top: 520px;
-        left: 580px;
+        top: 600px;
+        left: 600px;
         max-width: 360px;
         height: 500px;
      }
@@ -1175,14 +1185,15 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
         font-size: 1.8rem;
      }
      .social-box{
-        margin-top: 80px;
+        margin-top: 100px;
      } 
      .home__social-link{
-        font-size: 60px;
+        font-size: 3rem;
+        margin-top: 40px;
      }
      .work-heading{
         font-size: 2.8em;
-        background-size: 75% .6em;
+        background-size: 90% .6em;
      }
      .box__container-b{
         margin-left: -500px;
@@ -1195,17 +1206,20 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
         margin-top: -280px;
      }
      .white_circle{
-        margin-top: -1130px;
+        margin-top: -500px;
         margin-left:320px;
         max-width: 1000px;
      }
 
      .home__social{
-        top: 750px;
+        top: 600px;
      }
     .about__social{
         display: flex;
         justify-content: center;
+    }
+    .about__social-icon{
+        font-size: 3rem;
     }
     .portfolio__container{
         padding: 2rem;
@@ -1321,9 +1335,8 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
     }
 =====*/
 
-   
-
 }
+
 
 
 
