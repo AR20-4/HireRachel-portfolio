@@ -12,10 +12,10 @@
 }
 /*===== Colors =====*/
 :root{
-    --g-color: linear-gradient(120deg, rgb(176, 142, 214) 0%,  rgb(88, 202, 218) 100%);
+    --g-color: linear-gradient(120deg, rgb(176, 142, 214) 0%,  #58cada 100%);
     --first-color: #CC9999;
     --white-color: #FAFAFF;
-    --dark-color:  rgb(176, 142, 214);
+    --dark-color:  #b08ed6;
     --text-color: #697477;
     --soft-grey: #babfc0;  
 }
@@ -201,8 +201,10 @@ img{
 }
 /*===== HOME =====*/
 .home{
-    position: relative;
-    background: rgb(195, 171, 222);
+    background: radial-gradient(#58cada 20%, transparent 21% ,transparent 79%, #58cada 80%);
+        background-size: 1em 1em;
+        background-color: #b08ed6;
+    position: relative;  
     overflow: hidden; 
     margin-bottom: -10vw;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
@@ -231,10 +233,10 @@ img{
   }
   .console-container {
     font-family: 'Fira Sans', sans-serif;
-    font-size:1.8em;
+    font-size: .5em;
     text-align:center;
-    height:5px;
-    width:400px;
+    height:10px;
+    width:350px;
     display:block;
     position:absolute;
     color:white;
@@ -244,16 +246,17 @@ img{
     right:0;
     margin:auto;
   }
+
   .console-underscore {
     display:inline-block;
     position:relative;
-    top:-0.14em;
+    top:-0.05em;
     left:10px;
   }
 
 .home__title{
-    margin-left: -.5em;
-    margin-top: -1450px;
+    margin-left: -5.2em;
+    margin-top: -1440px;
     align-items: center; 
     color:  white;
     font-family: 'Fira Sans', sans-serif;
@@ -262,7 +265,7 @@ img{
     text-align:left;
     width: 30ch;
     text-shadow: 0 20px 25px rgba(0,0,0,.5);
-    line-height: -80px;
+    font-size:3.5em;
 }
 .home__title span{
     font-size: 1.4em;
@@ -290,11 +293,16 @@ img{
     justify-content: center;
     align-items: center;
     border: 2px double whitesmoke;
-    margin-top: -400px;
-    margin-bottom: 100px;
+    margin-top: -410px;
+    margin-bottom: 130px;
     margin-left: 10px;
     text-align: center;
     max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 31% 36% 0% 32% / 0% 42% 34% 48%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 .home__intro_title{
     color:whitesmoke;
@@ -316,6 +324,7 @@ img{
     text-align: center;
     letter-spacing: 2px;
 }
+
 .home__intro{
     color: whitesmoke;
     line-height: 1.3;
@@ -343,20 +352,25 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
     margin-left: -40px;
+    margin-top: 420px;
 }
+
   .home__social-links{
     display: inline-flex;
     flex-direction: row;
-    row-gap: .25rem;
     position: relative;
-    top: 30px;
+    top: -490px;
     left: 20px;
     z-index: 25;
     padding-left: 60px;
+    padding-top: 1em;
     padding-bottom: 10px;
-    margin-top: -100px;
+    border: 2px double whitesmoke;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
   .home__social-link{
     font-size: 1rem;
@@ -373,7 +387,7 @@ img{
     z-index: 3;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: -130px;
     margin-left: 20px;
     margin-bottom: -5px;
     width: 320px;
@@ -394,19 +408,24 @@ img{
     font-size: 2.3em;
     background-image: linear-gradient(120deg, #84faafb0 0%, #8fd2f4b2 100%);
     background-repeat: no-repeat;
-    background-size: 100% .6em;
-    background-position: 0 70%;
+    background-size: 100% 1.8em;
+    background-position: 0 100%;
     text-shadow: 0 20px 25px rgba(0,0,0,.5);
     text-align: center;
     letter-spacing: 2px;
-    margin-left: -20px;
+    margin-right: -2em;
+    margin-left: -80px;
+    margin-top: -150px;
+    margin-bottom: 120px;
+    border: 2px double whitesmoke;
 }
 .home-button{
     display: block;
     justify-content: center;
     align-items: center;
     z-index: 4;
-    margin-top: -220px; 
+    margin-top: -310px; 
+    margin-left: 5.5em;
 }
 .button{
     display: inline-block;
@@ -432,13 +451,14 @@ img{
   font-weight: 800;
   font-size: .9rem;
   border: 2px double #e084fa;
+  margin-bottom: 2.5em;
 }
 .button-light:hover{
     transform: translateX(.25rem);
 }
 .white_circle{
     position: relative;
-    top: -500px;
+    top: -1300px;
     left: 150px;
     height: 600px;
     width: 600px;
@@ -450,11 +470,12 @@ img{
 }
   .home__social{
     position: absolute;
-    top: 71.5rem;
+    top: 62.5rem;
     right: -2rem;
     display: grid;
     justify-items: center;
     row-gap: 3.5rem;
+    z-index: 30;
 }
   .home__social-follow{
     font-weight: var(--font-medium);
@@ -477,7 +498,6 @@ img{
     align-items: center;
     text-align: center;
     background: rgba(239, 235, 235, 0.7);
-  
     -webkit-backdrop-filter: blur(40px);
             backdrop-filter: blur(40px);
     border: solid 2px transparent;
@@ -539,10 +559,10 @@ img{
     row-gap: 2rem;
 }
 .skills_pattern{
-background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 15% , transparent 16%), radial-gradient(circle at bottom,transparent 19%, #CC9999 20% ,#CC9999 25% , transparent 26%), radial-gradient(circle at right,transparent 19%, #CC9999 20% ,#CC9999 25% , transparent 26%), radial-gradient(circle at left,transparent 9%, #CC9999 10% ,#CC9999 15% , transparent 16%);
-        background-size: 3em 3em;
-        background-color: #ffffff;
-        opacity: 0.65
+    background: linear-gradient(135deg, #58cada80 50%, transparent 0),linear-gradient(-135deg, #58cada80 50%, transparent 0);
+        background-size: 1em 1em;
+        background-color: #fdfbff;
+        opacity: 0.7;
 }
 .skills__subtitle{
     color: var(--white-color);
@@ -700,12 +720,28 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
      transform: skew(0, -20deg)
   }
 /* ===== CONTACT =====*/
+
+.contact{
+    background: radial-gradient(circle at left bottom ,transparent 14%,#58cada 15%, #58cada 25%, transparent 26%, transparent 34%,#58cada80 35%, #58cada80 45%, transparent 46%, transparent 54%, #58cada 55%, #58cada 65%, transparent 66%, transparent 74%, #58cada80 75%, #58cada80 85%, transparent 86%);
+        background-size: 1em 1em;
+        background-color: #b08ed6;
+        opacity: 0.7
+}
 .contact__container{
     row-gap: 2rem;
 }
 .contact__subtitle{
     font-size: var(--normal-font-size);
     color:#78cef9b2 ;
+}
+
+.contact-title{
+color: #f2f2f2;
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .contact__content{
     display: block;
@@ -738,7 +774,7 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
     font-size: 2rem;
 }
 .contact__section__title{
-    color: var(--dark-color);
+    color: var(--white-color);
     font-size: var(--h2-font-size);
     padding-bottom: 10px;
     text-align: center;
@@ -750,6 +786,7 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
    margin: var(--mb-1) 0; 
    padding-bottom: 10px;
    letter-spacing: 3px;
+   color: #f2f2f2;
 }
 .contact__social{
     color: var(--first-color);
@@ -795,7 +832,7 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
     display: block;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(120deg, rgb(181, 143, 225) 0%, #c992ac 100%);
+    background: linear-gradient(120deg, #b58fe1 0%, #c992ac 100%);
     color: var(--white-color);
     padding: .75rem .5rem;
     border-radius: 25px;
@@ -807,7 +844,7 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
 
 /* ===== FOOTER=====*/
 .footer{
-    background-image: linear-gradient(10deg, rgb(181, 143, 225) 0%, #CC9999 100%);
+    background-image: linear-gradient(10deg, rgb(181, 143, 225) 0%, #d5a3a3d6 100%);
     backdrop-filter: blur(10px);
     display: flex;
     padding-top: 15px;
@@ -1254,3 +1291,4 @@ background: radial-gradient(circle at top,transparent 9%, #CC9999 10% ,#CC9999 1
         left: 800px;
     }
 }
+
