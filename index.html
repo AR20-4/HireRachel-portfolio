@@ -2,11 +2,13 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/CSS/styles.css">
-
+          <!--=============== SWIPER CSS ===============-->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <!-- ===== BOX ICONS ===== -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
          <!-- ===== ANIMATION ON SCROLL ===== -->
@@ -36,8 +38,8 @@
                   <ul class="nav__list">
                       <li class="nav__item"><a href="#home" class="nav__link ">Home</a></li>
                       <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                      <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                       <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                      <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li> 
                       <li class="nav__item"><a href="#contact" class="nav__link hire__box">Hire <span>Me</span></a></li>
                   </ul>
                </div>
@@ -48,13 +50,7 @@
     </header>
  <!--===== HOME =====-->
       <main class="main__container">
-        <!--===== HOME
-           
-
-           <h2 class="home__title"><span>Need A Digital Wizard?</span></h2>
-           <h2 class="home__intro_title"><span>Abracadabra!</span>
-                </h2>
-           =====-->
+        
         <section class="home" id="home">
            
             <div class="home__container bd-grid">
@@ -62,11 +58,8 @@
 
               <div class="bg_circleline">
                 <img src="assets/IMG/white-line-circle.png" alt="">
-              </div>
-
-              <div class="home__title">
-              <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
-            </div>
+              </div> 
+             
 
               <div>
                 <div class="home__img">
@@ -74,46 +67,56 @@
                 </div>
               </div>
 
-             <div class="home__intro_box">
-                  <p class="home__intro">Hi! I am Rachel a <br><span>Full-stack Web Developer</span><br> & <br> <span>Digital Designer</span> <br>who builds magical websites.</p>
+              <div class="circle__text__container">
+              <div class="home__title">
+                <p class="rotation" id="letter"> </p>
+              </div>
             </div>
 
+            <div class="home__title__text">
+            <h1 class="fadeInUp-animation"><span>Abracadabra!</span></h1>   
+            </div>
+
+            <div class="home__intro_box">
+           <p class="home__intro_title"><span>Hi! I'm Rachel, I'm A Front-End Focused Web Developer & Digital Designer.</span></p>
+          </div>
+
             <div class="work-heading"><span>
-              Explore More
+              Explore More About Me
             </span>
             </div>
+
+            <div class="social-box">
+              <div class="home__social-links">
+                <a href="https://github.com/AR20-4" target="_blank" class="home__social-link">
+                  <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hirerachelglasgow/" target="_blank" class="home__social-link">
+                  <i class='bx bxl-linkedin' ></i>
+                </a>
+                <a href="https://codepen.io/AR20-4" target="_blank" class="home__social-link">
+                  <i class='bx bxl-codepen'></i>
+                </a>
+            </div>
+        </div>
+        <div class="white_circle"></div>
 
             <div class="box__container-b">
             </div>
                      
               <div class="home-button">
                 <div>
-                  <a download="" href="assets/pdf/myResume.pdf" class="button button-light"> Download CV</a>    
+                  <a download="" href="assets/PDF/Rachel_Glasgow_2024_digital_CV.pdf" class="button button-light"> Download My CV</a>    
                 </div>
                 <div>
-                  <a href="#portfolio"  class="button  button-light">See Portfolio</a>    
+                  <a href="#portfolio"  class="button  button-light">See My Work</a>    
                 </div>
                 <div>
                   <a href="#contact" class="button  button-light">Hire Me</a>    
                  </div>
               </div>
 
-                <div class="social-box">
-                  <div class="home__social-links">
-                    <a href="https://github.com/AR20-4" target="_blank" class="home__social-link">
-                      <i class='bx bxl-github'></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/hirerachelglasgow/" target="_blank" class="home__social-link">
-                      <i class='bx bxl-linkedin' ></i>
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                      <i class='bx bxl-codepen'></i>
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="white_circle"></div>
+           
 
             <div class="home__social">
               <span class="home__social-follow">Scroll Down<i class='bx bx-right-arrow-alt' ></i></span>
@@ -128,193 +131,560 @@
         <h2 class="section-title">About</h2>
 
         <div class="about__container bd-grid">
+          <div class="about__img-box">
             <div class="about__img">
                 <img src="assets/IMG/emojirachel.png" alt="">  
             </div>
-
-            <div>
+          </div>
+            <div class="about__box">
                 <h2 class="about__subtitle">Rachel Glasgow</h2>
                 <span class="about__profession">Web Developer</span>
-                <p class="about__text">Multi-disciplined in marketing principles, web development and digital design processes. I have the right foundations to build a career in tech. user experience and user interface design</p>
+                <p class="about__text">I am a skilled front-end focused web developer who loves turning lines of code into stunning, visually appealing, and user-friendly websites. Multi-talented, my interests are split between focusing on building full-stack web applications with MERN and immersing myself in learning to craft meaningful web experiences with P5.js, animation libraries, and creating interactive content. </p>
            
             <div class="about__social">
               <a href="https://www.linkedin.com/in/hirerachelglasgow/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
               <a href="https://github.com/AR20-4" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-              <a href="https://github.com/AR20-4" class="about__social-icon"><i class='bx bxl-codepen'></i></a>
-              <!--===<a href="#" class="about__social-icon"><i class='bx bxl-codepen'></i></a>
-              <a href="#" class="about__social-icon"><i class='bx bxl-behance' ></i></a>=====-->
+              <a href="https://codepen.io/AR20-4" class="about__social-icon"><i class='bx bxl-codepen'></i></a>
             </div>
           </div>
         </div>
     </section>
 
+   
+       <!--===== PORTFOLIO =====-->
+      <section class="portfolio section" id="portfolio">
+        <span class="section-subtitle"></span>
+        <h2 class="section-title">Portfolio</h2>
+
+          <div class="portfolio__content">
+            <div class="portfolio__content-1">
+              <div class="portfolio__intro__wrapper">
+                <div class="portfolio__item">
+                 My portfolio stands as a testament throughout my journey as a web developer to continuously grow and yern to craft exceptional digital experiences.
+                </div> 
+               </div> 
+              </div> 
+         
+            <div class="portfolio__title__wrapper">
+              <h1 class="card-title">Tuscan Table</h1>
+            </div>
+  
+          <div class="portfolio__container swiper swiper-container1 ">
+            <div class="portfolio__container_wrapper swiper-wrapper">
+  
+              <div class="port-card-wrapper  swiper-slide">
+                <div class="portfolio__data-container ">
+               
+                  <div class="portfolio__img">
+                  <a href="https://tuscantableristorante.com/"><img src="assets/IMG/tuscantable.gif" alt=""></a>
+                  </div>
+              
+                </div>
+             </div>
+  
+          <div class="port-card-wrapper  swiper-slide">
+            <div class="portfolio__data-container">
+              
+              <div class="card-body">
+                <div class="card-info-container">
+                  <p class="card-subtitle">Tech & Methods Used <br>
+                    <span class="port-skills__name">HTML</span>
+                    <span class="port-skills__name">CSS</span>
+                    <span class="port-skills__name">CSS BEM Model</span>
+                    <span class="port-skills__name">CSS flex & Grid</span>
+                    <span class="port-skills__name">Javascript</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+            <div class="port-card-wrapper swiper-slide">
+            <div class="portfolio__data-container">
+                    <img src="assets/IMG/omyoga_photo.png" alt="" class="website__photo"> 
+                  </div>
+                </div>
+                
+                <div class="port-card-wrapper swiper-slide">
+                  <div class="portfolio__data-container">
+                  
+                    <div class="card-body">
+                      <div class="card-info-container">
+                     
+                        <p class="card-info">Highlighted Features <br> 
+                          <span class="port-skills__card">Clean Modern Design</span>
+                          <span class="port-skills__card">Responsive</span>
+                          <span class="port-skills__card">Light and Dark Mode</span>
+                          <span class="port-skills__card">Subtle Hover Effects</span>
+                          <span class="port-skills__card">Image Slider</span>
+                          <span class="port-skills__card">Accordion</span>
+                          <span class="port-skills__card">Smooth Scroll Action</span></p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+             
+                </div>  <!--===== close wrapper =====-->
+                
+                <div class="swiper-pagiantion-bullet"></div>
+                <div class="swiper-button-pagination1"></div>
+                  <div class="swiper-button-next swiper-navBtn"></div>
+                  <div class="swiper-button-prev swiper-navBtn"></div>
+                  <div class="swiper-scrollbar"></div>
+                  
+                  </div>  <!--===== close container =====-->
+  
+                  
+                  <div class="button-container">
+                    <a href="https://ar20-4.github.io/OmYoga/"><h2 class="button portfolio__title">Visit Site</h2></a>
+  
+                    <a href="https://github.com/AR20-4/OmYoga" class="button port-button-link">View Details</a>
+                </div>        
+           </div>
+
+         <div class="portfolio__content">
+         
+          <div class="portfolio__title__wrapper">
+            <h1 class="card-title">Om Yoga</h1>
+          </div>
+
+        <div class="portfolio__container swiper swiper-container1 ">
+          <div class="portfolio__container_wrapper swiper-wrapper">
+
+            <div class="port-card-wrapper  swiper-slide">
+              <div class="portfolio__data-container ">
+               <div class="portfolio__data">
+                <div class="portfolio__img">
+                <a href="https://ar20-4.github.io/OmYoga/"><img src="assets/IMG/Omyoga.gif" alt=""></a>
+                </div>
+               </div>
+              </div>
+           </div>
+
+        <div class="port-card-wrapper  swiper-slide">
+          <div class="portfolio__data-container">
+            
+            <div class="card-body">
+              <div class="card-info-container">
+                <p class="card-subtitle">Tech & Methods Used <br>
+                  <span class="port-skills__name">HTML</span>
+                  <span class="port-skills__name">CSS</span>
+                  <span class="port-skills__name">CSS BEM Model</span>
+                  <span class="port-skills__name">CSS flex & Grid</span>
+                  <span class="port-skills__name">Javascript</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="port-card-wrapper swiper-slide">
+          <div class="portfolio__data-container">
+                  <img src="assets/IMG/omyoga_photo.png" alt="" class="website__photo"> 
+                </div>
+              </div>
+              
+              <div class="port-card-wrapper swiper-slide">
+                <div class="portfolio__data-container">
+                
+                  <div class="card-body">
+                    <div class="card-info-container">
+                   
+                      <p class="card-info">Highlighted Features <br> 
+                        <span class="port-skills__card">Clean Modern Design</span>
+                        <span class="port-skills__card">Responsive</span>
+                        <span class="port-skills__card">Light and Dark Mode</span>
+                        <span class="port-skills__card">Subtle Hover Effects</span>
+                        <span class="port-skills__card">Image Slider</span>
+                        <span class="port-skills__card">Accordion</span>
+                        <span class="port-skills__card">Smooth Scroll Action</span></p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+           
+              </div>  <!--===== close wrapper =====-->
+              
+              <div class="swiper-pagiantion-bullet"></div>
+              <div class="swiper-button-pagination1"></div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-scrollbar"></div>
+                
+                </div>  <!--===== close container =====-->
+
+                
+                <div class="button-container">
+                  <a href="https://ar20-4.github.io/OmYoga/"><h2 class="button portfolio__title">Visit Site</h2></a>
+
+                  <a href="https://github.com/AR20-4/OmYoga" class="button port-button-link">View Details</a>
+              </div>        
+         </div>
+
+         <div class="portfolio__content">
+          <div class="portfolio__title__wrapper">
+            <h1 class="card-title">Homaway Real Estate</h1>
+          </div>
+
+        <div class="portfolio__container swiper swiper-container1 ">
+          <div class="portfolio__container_wrapper swiper-wrapper">
+
+            <div class="port-card-wrapper  swiper-slide">
+              <div class="portfolio__data-container ">
+               <div class="portfolio__data">
+                <div class="portfolio__img">
+                <a href="https://ar20-4.github.io/Real-estate-site/"><img src="assets/IMG/realestate.gif" alt=""></a>
+                </div>
+               </div>
+              </div>
+           </div>
+
+        <div class="port-card-wrapper  swiper-slide">
+          <div class="portfolio__data-container">
+            
+            <div class="card-body">
+              <div class="card-info-container">
+                <p class="card-subtitle">Tech & Methods Used <br>
+                  <span class="port-skills__name">HTML</span>
+                  <span class="port-skills__name">CSS</span>
+                  <span class="port-skills__name">CSS BEM Model</span>
+                  <span class="port-skills__name">CSS flex & Grid</span>
+                  <span class="port-skills__name">Javascript</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="port-card-wrapper swiper-slide">
+          <div class="portfolio__data-container">
+                  <img src="assets/IMG/realestate_photo.png" alt="" class="website__photo"> 
+                </div>
+              </div>
+              
+              <div class="port-card-wrapper swiper-slide">
+                <div class="portfolio__data-container">
+                
+                  <div class="card-body">
+                    <div class="card-info-container">
+                   
+                      <p class="card-info">Highlighted Features <br> 
+                        <span class="port-skills__card">Clean Modern Design</span>
+                        <span class="port-skills__card">Responsive</span>
+                        <span class="port-skills__card">Light and Dark Mode</span>
+                        <span class="port-skills__card">Subtle Hover Effects</span>
+                        <span class="port-skills__card">Image Slider</span>
+                        <span class="port-skills__card">Accordion</span>
+                        <span class="port-skills__card">Smooth Scroll Action</span></p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+           
+              </div>  <!--===== close wrapper =====-->
+              
+              <div class="swiper-pagiantion-bullet"></div>
+              <div class="swiper-button-pagination1"></div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-scrollbar"></div>
+                
+                </div>  <!--===== close container =====-->
+
+                
+                <div class="button-container">
+                  <a href="https://ar20-4.github.io/Real-estate-site/"><h2 class="button portfolio__title">Visit Site</h2></a>
+
+                  <a href="https://github.com/AR20-4/real-estate-site" class="button port-button-link">View Details</a>
+              </div>        
+         </div>
+
+         <div class="portfolio__content">
+          <div class="portfolio__title__wrapper">
+            <h1 class="card-title">Blackbird Perfume</h1>
+          </div>
+
+        <div class="portfolio__container swiper swiper-container1 ">
+          <div class="portfolio__container_wrapper swiper-wrapper">
+
+            <div class="port-card-wrapper  swiper-slide">
+              <div class="portfolio__data-container ">
+               <div class="portfolio__data">
+                <div class="portfolio__img">
+                <a href="https://ar20-4.github.io/Blackbird/"><img src="assets/IMG/blackbird.gif" alt=""></a>
+                </div>
+               </div>
+              </div>
+           </div>
+
+        <div class="port-card-wrapper  swiper-slide">
+          <div class="portfolio__data-container">
+            
+            <div class="card-body">
+              <div class="card-info-container">
+                <p class="card-subtitle">Tech & Methods Used <br>
+                  <span class="port-skills__name">HTML</span>
+                  <span class="port-skills__name">CSS</span>
+                  <span class="port-skills__name">CSS BEM Model</span>
+                  <span class="port-skills__name">CSS flex & Grid</span>
+                  <span class="port-skills__name">Javascript</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="port-card-wrapper swiper-slide">
+          <div class="portfolio__data-container">
+            <img src="assets/IMG/perfume_photo.png" alt="" class="website__photo">
+                </div>
+              </div>
+              
+              <div class="port-card-wrapper swiper-slide">
+                <div class="portfolio__data-container">
+                
+                  <div class="card-body">
+                    <div class="card-info-container">
+                   
+                      <p class="card-info">Highlighted Features <br> 
+                        <span class="port-skills__card">Clean Modern Design</span>
+                        <span class="port-skills__card">Responsive</span>
+                        <span class="port-skills__card">Light and Dark Mode</span>
+                        <span class="port-skills__card">Subtle Hover Effects</span>
+                        <span class="port-skills__card">Image Slider</span>
+                        <span class="port-skills__card">Accordion</span>
+                        <span class="port-skills__card">Smooth Scroll Action</span></p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+           
+              </div>  <!--===== close wrapper =====-->
+              
+              <div class="swiper-pagiantion-bullet"></div>
+              <div class="swiper-button-pagination1"></div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-scrollbar"></div>
+                
+                </div>  <!--===== close container =====-->
+
+                
+                <div class="button-container">
+                  <a href="https://ar20-4.github.io/modern-internet-banking/"><h2 class="button portfolio__title">Visit Site</h2></a>
+                  <a href="https://github.com/AR20-4/modern-internet-banking" class="button port-button-link">View Details</a>
+              </div>        
+         </div>
+
+      </section>
+
+
       <!--===== SKILLS =====-->
       <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
-        <div class="skills_pattern">
-        <div class="skills__container bd-grid">
-            
-            <div class="skills__box">
-
-                <div class="container">
-                   
-                    <section class="card" data-aos="fade-left">
+        <div class="skills_pattern ">
+          
+        <div class="skills__container swiper swiper-container2">
+                <div class="container swiper-wrapper">  
+                    <div class="card-1 swiper-slide" data-aos="fade-left"> 
                       
-                      <div>
-                          <div class="grey__box">
-                        <h3 class="skills__subtitle">Development</h3>
-                        <p><span class="skills__name"><i class='bx bx-code-block' ></i>Code</span>
-                          <span class="skills__name"><i class='bx bxl-html5'></i>Html</span>
-                            <span class="skills__name"><i class='bx bxl-css3'></i>Css</span>
-                            <span class="skills__name"><i class='bx bxl-sass'></i>Scss</span>
-                            <span class="skills__name"><i class='bx bxl-tailwind-css'></i>Tailwind</span>
-                            <span class="skills__name"><i class='bx bxl-javascript'></i>Javascript</span>
-                            <span class="skills__name"><i class='bx bxl-react'></i>React</span>
-                            <span class="skills__name"><i class='bx bxl-typescript'></i></i>Typescipt</span>
-                            <span class="skills__name"><i class='bx bxl-nodejs'></i>Nodejs</span>
-                            <span class="skills__name"><i class='bx bx-terminal'></i>Terminal</span>
-                            <span class="skills__name"><i class='bx bxl-visual-studio'></i>VS Code</span>
-                            <span class="skills__name"><i class='bx bxl-github'></i>Github</span>
-                            <span class="skills__name"><i class='bx bxl-git'></i>Git</span>
-                            <span class="skills__name"><i class='bx bxl-mongodb'></i>Mongodb</span>
-                            <span class="skills__name"><i class='bx bx-data'></i>Data</span></p> 
+                         <h3 class="skills__subtitle"><span>Technical Proficiencies</span></h3>
+                        <div class="skills_info_wrapper">
+                          <div class="skills__box"> 
+                         <div class="tech__details-box">
+                          <h3><u>Tech</u></h3>
+                          <p>Operating Systems: <span> MacOS, </span><span> Windows</span>
+                          </p>
+                          <p>Text Editor: <span> VSCode </span>
+                          </p>
+                          <p>Terminal: <span> Zsh/Bash </span><span> CLI </span>
+                          </p>
+                         </div>
+
+                         <div class="lang__details-box">
+                         <h3><u>Programming Languages</u></h3>
+                          <p>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>SCSS</span>
+                            <span>Tailwind</span>
+                            <span>Javascript (ES6)</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                          </p>
+                         </div>
+
+                         <div class="js-fund__box">
+                         <h3><u>JS Fundamentals</u></h3>
+                         <p>Variables, Data Types, Functions, Conditionals, DOM, JSON, RestAPI</p>
+                         <h3 class="js-fund__box-subtitle"><u>Deployment Fundamentals</u></h3>
+                         <p class="deploy_info"> 
+                          <span>Domain Registration, Managed Hosting, Static Hosting, SSL Certificate, FTP, SSH, CLI, and Git</span>
+                        </p>
+                       </div>
                       </div>
                     </div>
-                    </section>
-              
-                    <section class="card" data-aos="fade-right">
-                      <div>
-                        <div class="light__box">
-                        <h3 class="skills__subtitle">Design</h3>
-                        <p><span class="skills__name"><i class='bx bxl-figma'></i>Figma</span>
-                            <span class="skills__name"><i class='bx bxl-adobe'></i>Adobe XD</span>
-                            <span class="skills__name"><i class='bx bxl-adobe'></i>Photoshop</span>
-                            <span class="skills__name"><i class='bx bxl-adobe'></i>Illustrator</span>
-                            <span class="skills__name"><i class='bx bxl-adobe'></i>After Effects</span>
-                            <span class="skills__name"><i class='bx bxl-adobe'></i>Premiere Pro</span></p> 
+                  </div>
+                         
+                       <div class="card-1 swiper-slide" data-aos="fade-left"> 
+                        
+                           <h3 class="skills__subtitle"><span>Tech Stack</span></h3>
+                   <div class="skills_info_wrapper">
+                         <div class="skills__box">
+                            <p><span class="skills__name"><i class='bx bx-code-block' ></i></span>
+                            <span class="skills__name"><i class='bx bxl-html5'></i></span>
+                            <span class="skills__name"><i class='bx bxl-css3'></i></span>
+                            <span class="skills__name"><i class='bx bxl-sass'></i></span>
+                            <span class="skills__name"><i class='bx bxl-tailwind-css'></i></span>
+                            <span class="skills__name"><i class='bx bxl-javascript'></i></span>
+                            <span class="skills__name"><i class='bx bxl-react'></i></span>
+                            <span class="skills__name"><i class='bx bxl-typescript'></i></i></span>
+                            <span class="skills__name"><i class='bx bxl-nodejs'></i></span>
+                            <span class="skills__name"><i class='bx bx-terminal'></i></span>
+                            <span class="skills__name"><i class='bx bxl-visual-studio'></i></span>
+                            <span class="skills__name"><i class='bx bxl-github'></i></span>
+                            <span class="skills__name"><i class='bx bxl-git'></i></span>
+                            <span class="skills__name"><i class='bx bxl-mongodb'></i></span>
+                         </div>
+                        </div>
+                        </div>
+                                  
+                    <div class="card-2 swiper-slide" data-aos="fade-left">
+                      
+                        
+                        <h3 class="skills__subtitle"> <span>Design Foundations</span> </h3>
+                        <div class="skills_info_wrapper">
+                          <div class="skills__box">
+                        <p class="design_header"><u>Wireframes & Mocking Tools:</u><br>
+                          <span class="skills__name">Figma</span>
+                            <span class="skills__name">Adobe XD</span>
+                            <span class="skills__name">Photoshop</span>
+                            <span class="skills__name">Illustrator</span>
+                          </p> 
+                          <p class="design_subheader"><u>Video & Content Creation Tools:</u><br>
+                            <span class="skills__name"></i>After Effects</span>
+                            <span class="skills__name">Premiere Pro</span></p> 
+                            <p class="design_sec_subheader"><u>Other Design Tools:</u> <br>
+                              <span class="skills__name">Wix</span>
+                              <span class="skills__name">Canva</span>
+                            </p>
+                          </div>
                       </div>
-                      </div>
-                    </section>
-              
-                    <section class="card" data-aos="fade-left">
-                      <div>
-                        <div class="pink__box">
-                        <h3 class="skills__subtitle">Marketing</h3>
-                        <p><span class="skills__name">SEO</span>
-                            <span class="skills__name">CMS Tools</span>
-                            <span class="skills__name">CRM (Saleforce/PipeDrive)</span>
+                    </div>
+                                 
+                    <div class="card-3 swiper-slide" data-aos="fade-left">
+                    
+                        
+                        <h3 class="skills__subtitle"> <span>Marketing Expertise</span></h3>
+                        <div class="skills_info_wrapper">
+                          <div class="skills__box">
+                        <p class="marketing_tools"><u>Marketing Tools</u> <br>
+                          <span class="skills__name">CMS: Shopify, Webflow, Wix  
+                          </span>
+                          <span class="skills__name">CRM: Salesforce, Pipedrive</span>
+                          <span class="skills__name">Google Web Analytics</span>
+                        </p>
+
+                          <p class="marketing_bp"><u>Best Practices</u>
+                          <br>
+                          <span class="skills__name">SEO</span>
+                          <span class="skills__name">Keywords </span>
+                          <span class="skills__name">User Testing</span>
+                        </p>
+
+                           <p class="marketing__info"><u>Marketing Experience </u><br>
                             <span class="skills__name">Content Creation</span>
-                            <span class="skills__name">Web Analytics</span>
                             <span class="skills__name">Email Marketing</span>
-                             <span class="skills__name">Social Media Marketing</span><span class="skills__name">Keywords </span>
+                             <span class="skills__name">Social Media Marketing</span>
                             <span class="skills__name">Project/Campaign Management</span>
+                            <span class="skills__name">Brand Management</span>
                             <span class="skills__name">Copywriting</span>
                              <span class="skills__name">Event Planning</span>
-                            <span class="skills__name">Sales</span><span class="skills__name">Brand Management</span><span class="skills__name">User Testing</span></p>   
-                      </div>
-                      </div>
-                    </section>
+                            <span class="skills__name">Sales</span>
+                          </p> 
+                        </div>  
+                      </div> 
+                    </div>                      
               
-                    <section class="card" data-aos="fade-right">
-                      <div>
-                        <div class="purple__box">
-                        <h3 class="skills__subtitle">Personal</h3>
-                        <p><span class="skills__name">Time Management</span>
-                            <span class="skills__name">Effective Communication</span>
-                            <span class="skills__name">Adaptability</span>
-                            <span class="skills__name">Critical Thinking</span>
-                            <span class="skills__name">Emotional Intelligence</span>
-                            <span class="skills__name">Teamwork Skills</span>
-                            <span class="skills__name">Problem-solving Skills</span><span class="skills__name">Attention to Detail</span><span class="skills__name">Stress Management Skills</span></p>
-                      </div>
+                    <div class="card-4 swiper-slide" data-aos="fade-left">
+                    
+                        <h3 class="skills__subtitle"> <span>Personal Assets</span></h3>
+                        <div class="skills_info_wrapper">
+                        <div class="pa-box">
+                        <p class="personal_assets"> 
+                          <ul class="pa-list">
+                            <li class="point">Team player with excellent interpersonal skills and the ability to work in a fast-paced environment
+                            </li>
+                            <li class="point">Demonstrate excellent oral and written communication skills with the ability to listen, articulate, and facilitate as well as the ability to advocate
+                            </li>
+                            <li class="point">Proficient in creating webpages using HTML, CSS, JS, and React
+                            </li>
+                            <li class="point">Willing to use brand standards and web development best practices</li>
+                            <li class="point">Focused on writing clean, W3C-compliant front-end code while keeping in mind: web-standards, semantics, usability, accessibility, optimization, modularity, and reusability.</li>
+                          </ul>
+                        </p>
                       </div>
                     </div>
-                    </section>
-             
-                  </div>  
+                 
+                  </div>
+                  
+                      <div class="card-1 swiper-slide" data-aos="fade-left"> 
+                       
+                           <h3 class="skills__subtitle"><span>Personal Highlights</span></h3>
+                           <div class="skills_info_wrapper">
+                        <div class="skills_pa_box">
+                        <p>
+                          <span class="p-skills__name">Time Management</span>
+                            <span class="p-skills__name">Effective Communication</span>
+                            <span class="p-skills__name">Adaptability</span>
+                            <span class="p-skills__name">Critical Thinking</span>
+                            <span class="p-skills__name">Emotional Intelligence</span>
+                            <span class="p-skills__name">Teamwork Skills</span>
+                            <span class="p-skills__name">Problem-solving Skills</span><span class="p-skills__name">Attention to Detail</span><span class="p-skills__name">Stress Management Skills</span>
+                          </p>
+                        </div>
+                      </div> 
+                   
+                      </div> 
 
-            </div>
-        </div> 
-    </section>
-
-       <!--===== PORTFOLIO =====-->
-
-
-       <section class="portfolio section" id="portfolio">
-        <span class="section-subtitle"></span>
-        <h2 class="section-title">Portfolio</h2>
-        
-        <div class="portfolio__nav">
-            <span class="portfolio__item" data-filter=".graphic">My Work</span>  
-        </div>
-
-        <div class="portfolio__container bd-grid">
-
-           <div class="portfolio__card_a">
-            <div class="portfolio__content mix web">
+                 </div> 
                 
-                <div class="portfolio__data">
-                    <span class="portfolio__subtitle">Web Development</span>
-                    <a href="https://ar20-4.github.io/real-estate-site/"><img src="assets/IMG/realestate.gif" alt="" class="portfolio__img"></a>
-                    <a href="https://ar20-4.github.io/real-estate-site/"><h2 class="portfolio__title">Click here to see recent work done for a client.</h2></a>
-                    <a href="https://github.com/AR20-4/real-estate-site" class="button button-link">View Details</a>
-                </div>
-            </div>
+                    <div class="swiper-button-next swiper-btn "></div>
+                    <div class="swiper-button-prev swiper-btn"></div>
+                    <div class="swiper-button-pagination "></div>
+                    <div class="swiper-pagiantion-bullet "></div>
+                  
+          </div>
         </div> 
-
-        <div class="portfolio__card_b">
-            <div class="portfolio__content mix web">
-                <div class="portfolio__data">
-                    <span class="portfolio__subtitle">Web Development</span>
-                    <a href="https://ar20-4.github.io/Blackbird/"><img src="assets/IMG/blackbird.gif" alt="" class="portfolio__img"></a>
-                    <a href="https://ar20-4.github.io/Blackbird/"><h2 class="portfolio__title">Click here to see recent work done for a client.</h2></a>
-                    <a href="https://ar20-4.github.io/Blackbird/" class="button button-link">View Details</a>
-                </div>
-            </div>
-        </div> 
-
-        <div class="portfolio__card_a">
-            <div class="portfolio__content mix web">
-                <div class="portfolio__data">
-                    <span class="portfolio__subtitle">Web Development</span>
-                    <a href="https://ar20-4.github.io/OmYoga/"><img src="assets/IMG/Omyoga.gif" alt="" class="portfolio__img"></a>
-                    <a href="https://ar20-4.github.io/OmYoga/"><h2 class="portfolio__title">Click here to see recent work done for a client.</h2></a>
-                    <a href="https://ar20-4.github.io/OmYoga/" class="button button-link">View Details</a>
-                </div>
-            </div>
-        </div> 
-            
-           
-        </div>
     </section>
 
+     
 
-    
+     <!--===== Workflow 
 
     <section class="workflow section" id="workflow">
         <div class="blue__box"></div>
         <h2 class="section-title">Workflow</h2>
     
     </section> 
+    =====-->
 
-    <!--===== CONTACT 
-      
-       <div class="contact__box">
-                <i class='bx bxs-phone-call contact__icon'></i>
-                <h3 class="contact__title">Call</h3>
-               <div>
-               <span>319.750.7777</span>
-               </div>
-            </div>
-            =====-->
+    <!--===== CONTACT =====-->
 
     <section class="contact section" id="contact">
-        <h2 class="section-title contact-title">Reach Out!</h2>
+        
 
         <div class ="contact__img">
             <img src="assets/IMG/spacecontact.png" alt="">
-        </div>
-        <h2 class="contact__section__title">Together, let's build something magical!</h2>
+       
+            <h2 class="section-title contact-title">Reach Out!</h2>
+        
+        <div class="contact__section__title">
+        <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+       </div>
+      </div>
+       
+
         <div class="contact__container bd-grid">
             
             <div class="contact__content bd-grid">
@@ -328,7 +698,7 @@
                 <i class='bx bx-chat contact__icon' ></i>
                 <h3 class="contact__title"> Message</h3>
                <div>
-               <span>fill out contact form</span>
+               <span>Fill Out Contact Form</span>
                </div>
             </div>
         </div>
@@ -364,12 +734,11 @@
         <ul>
             <li><a href="#home" class="footer__link">Home</a></li>
             <li><a href="#about" class="footer__link">About</a></li>
-            <li><a href="#skills" class="footer__link">Skills</a></li>
             <li><a href="#portfolio" class="footer__link">Work</a></li>
-            <li><a href="#workflow" class="footer__link">Workflow</a></li>
+            <li><a href="#skills" class="footer__link">Skills</a></li>
             <li><a href="#Contact" class="footer__link">Hire Me</a></li>
         </ul>
-    </div>
+        </div>
 
         <h1 class="footer__title"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <br> Rachel Glasgow</h1>
         <p class="footer__description">Let me build modern and beautiful websites for you</p>
@@ -378,17 +747,12 @@
             <a href="https://www.linkedin.com/in/hirerachelglasgow/" class="footer__link"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/AR20-4" class="footer__link"><i class='bx bxl-github'></i></a>
             <a href="https://codepen.io/AR20-4" class="footer__link"><i class='bx bxl-codepen'></i></a>
-            <a href="#" class="footer__link"><i class='bx bxl-dribbble'></i></a>
-            <a href="https://www.instagram.com/ar2.aesthetics" class="footer__link"><i class='bx bxl-instagram'></i></a>
         </div>
         <p class="footer__copy">&#169; 2024 Rachel Glasgow all rights resevered</p>
-    </div>
-  </div> 
-            </div>
-        </footer>
-
-
-
+      </div>
+    </div>  
+  </div>
+</footer>
 
        <!--===== FONT AWESOME=====-->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
@@ -399,23 +763,11 @@
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
       
-      <!--===== SCROLL L&R =====-->
+      <!--===== SCROLL L&R AOS=====-->
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init({
-          offset: 400,
-          duration: 1000
-        });
-      </script>
-
-<script type="text/javascript">
-  window.addEventListener('scroll', function(){
-      const header = document.querySelector('header');
-      header.classList.toggle("sticky", window.scrollY > 0);
-  });
-
-  </script>
-
+     
+          <!--===== SWIPER JS =====-->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <!--===== SCROLL REVEAL =====-->
       <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -424,3 +776,6 @@
 
     </body>
     </html>
+
+
+
