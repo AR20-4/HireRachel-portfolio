@@ -56,16 +56,17 @@ const sr = ScrollReveal({
     reset: true
 })
 
-/*SCROLL HOME*/
-sr.reveal('.home__title', {origin:'left'})
+/*SCROLL HOME  */
+sr.reveal('.home__title', {origin:'left'}) 
 sr.reveal('.home__scroll', {delay: 200})
-sr.reveal('.home__img', {origin:'left', delay: 100})
-sr.reveal('.home__intro_box', {origin:'left'})
+sr.reveal('.home__img', {origin:'left', delay: 200})
+sr.reveal('.home__intro_box', {origin:'bottom', delay: 200})
+sr.reveal('.console-underscore', {origin:'left', delay: 1000})
 sr.reveal('.work-heading', {origin:'left'})
 sr.reveal('.home-button', {origin:'left', delay: 200})
 sr.reveal('.home__social-links', {origin:'left', delay: 200})
-sr.reveal('.bg_circleline', {origin:'top'})
-sr.reveal('.white_circle', {origin:'top'})
+sr.reveal('.home__social-follow', {origin:'top', delay: 600})
+
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img', {delay: 500})
@@ -74,26 +75,37 @@ sr.reveal('.about__profession', {delay: 400})
 sr.reveal('.about__text', {delay: 500})
 sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
-/*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle', {})
-sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
-sr.reveal('.skills__img', {delay: 400})
+
 
 /*SCROLL PORTFOLIO*/
-sr.reveal('.portfolio__card_a', {origin:'left'})
-sr.reveal('.portfolio__card_b', {origin:'right'})
+
 
 
 
 /*SCROLL CONTACT )*/
 sr.reveal('.contact__img', {origin:'left', delay: 400})
-sr.reveal('.contact__subtitle', {})
+sr.reveal('.contact__subtitle', {origin:'left'})
 sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
-/*===== TEXT ANIMATION =====*/
-consoleText(['Need A Digital Wizard?', 'Abracadabra!', 'Look No Further.'], 'text',['#FAFAFF','#f5de8c','#FAFAFF']);
+/*===== CIRCLE TEXT ANIMATION =====*/
+
+const str = "Looking For A Digital Wizard? -- ";
+const letter = document.getElementById("letter");
+window.onload = () => {
+  for (let i = 0; i < str.length; i++) {
+    let spin = document.createElement("spin");
+    spin.innerHTML = str[i];
+    letter.appendChild(spin);
+    spin.style.transform = `rotate(${i * 11}deg)`;
+  }
+};
+
+
+/*===== TYPE TEXT ANIMATION =====*/
+
+consoleText(['Looking for a digital transformation?', 'I would love to build a website for you.', 'Lets work together!'], 'text',[ '#f5de8c','#FAFAFF','#FAFAFF']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -130,7 +142,7 @@ function consoleText(words, id, colors) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
-  }, 120)
+  }, 150)
   window.setInterval(function() {
     if (visible === true) {
       con.className = 'console-underscore hidden'
@@ -144,5 +156,70 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
+/*===== AOS =====*/
+AOS.init({
+  offset: 400,
+  duration: 1000
+});
+
+type="text/javascript">
+window.addEventListener('scroll', function(){
+const header = document.querySelector('header');
+header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+/*===== SWIPER =====*/
+
+const swiper1 = new Swiper('.swiper-container1', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  loop: true,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+},
+
+  pagination: {
+    el: '.swiper-pagination1',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+const swiper2 = new Swiper(".swiper-container2", {
+  spaceBetween: 32,
+  grabCursor: true,
+  centeredSlide: true,
+  slidesPerView: 'auto',
+  loop: true,
+
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  }
+});
 
 
+
+
+
+ 
